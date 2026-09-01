@@ -14,17 +14,23 @@
     </header>
 
     <h2>文章</h2>
-    <ul class="posts">
+    <div class="search">
+      <input type="search" id="search" placeholder="搜索文章…" aria-label="搜索文章" autocomplete="off">
+    </div>
+    <ul class="posts" id="posts">
       <li>
         <a href="001/">001 · 你好，世界</a>
         <time datetime="2026-09-01">2026-09-01</time>
       </li>
       <!-- 新文章在这里加 <li>：编号 +1，日期照写 -->
     </ul>
+    <p id="no-result" hidden>没有匹配的文章。</p>
 
     <footer>
       <p>Nobuild：手写 HTML/CSS，扔给任意静态托管就能跑。</p>
     </footer>
   </main>
+
+  <script src="search.js"></script>
 </body>
 </html>

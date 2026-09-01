@@ -71,3 +71,23 @@ article pre code { background: none; padding: 0; }
 .back { display: inline-block; margin-top: 3rem; color: var(--muted); }
 
 footer { margin-top: 4rem; color: var(--muted); font-size: .85rem; }
+
+/* 搜索框 */
+.search { margin: 0 0 .25rem; }
+.search input {
+  width: 100%;
+  padding: .5rem .8rem;
+  font: inherit;
+  color: var(--fg);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  outline: none;
+}
+.search input:focus { border-color: var(--link); }
+.search input::placeholder { color: var(--muted); }
+
+/* display:flex 会盖掉 UA 的 [hidden]，需显式补一刀 */
+.posts li[hidden] { display: none; }
+
+#no-result { color: var(--muted); }

@@ -70,6 +70,8 @@ article pre code { background: none; padding: 0; }
 
 .back { display: inline-block; margin-top: 3rem; color: var(--muted); }
 
+.origin { color: var(--muted); font-size: .85rem; margin-top: 2.5rem; }
+
 footer { margin-top: 4rem; color: var(--muted); font-size: .85rem; }
 
 /* 搜索框 */

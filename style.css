@@ -110,6 +110,12 @@ article pre:hover ~ .copy-btn,
   .copy-btn { opacity: 1; }
 }
 article pre code { background: none; padding: 0; }
+article blockquote {
+  margin: 1.1em 0;
+  padding: .1em 1em;
+  color: var(--muted);
+  border-left: 3px solid var(--line);
+}
 
 .back { display: inline-block; margin-top: 3rem; color: var(--muted); }
 

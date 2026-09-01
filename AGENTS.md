@@ -8,6 +8,7 @@
 - `index.html`（根）：首页，手动维护的文章列表
 - `404.html`：访问不存在的路径时自动重定向回首页。自包含样式与根定位逻辑（兼容 GitHub Pages 项目子路径 `/Rawblog/` 与根路径部署），GitHub Pages / Netlify / CF Pages 自动识别，nginx 需配 `error_page 404 /404.html;`
 - `search.js`：首页全文搜索。以文章列表里的链接为索引，输入时并行拉取各篇 `index.html` 的正文做匹配——加新文章不用改任何搜索相关的东西
+- `copy.js`：文章页代码块右上角的一键复制按钮（悬停显现，触屏常显；非 HTTPS 环境自动走 execCommand 兜底）。每篇文章的 `index.html` 末尾引入 `../copy.js`
 - `style.css`：全站唯一样式表，相对路径引用（首页 `style.css`，文章页 `../style.css`）
 
 ```
@@ -17,6 +18,7 @@
 │   └── index.html
 ├── 404.html          ← 死链自动回首页
 ├── index.html        ← 首页（文章列表）
+├── copy.js           ← 文章页代码块复制按钮
 ├── search.js         ← 首页全文搜索
 └── style.css
 ```

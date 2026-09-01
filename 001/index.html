@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>你好，世界 · Rawblog</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <article>
+      <h1>你好，世界</h1>
+      <p class="meta"><time datetime="2026-09-01">2026-09-01</time> · 001</p>
+
+      <p>这是 Rawblog 的第一篇文章，顺便把这个博客的全部哲学写清楚：</p>
+
+      <ul>
+        <li><strong>一篇博客一个文件夹</strong> —— <code>001/</code>、<code>002/</code>、<code>003/</code>……编号只增不减；</li>
+        <li>每个文件夹里只有一个 <code>index.html</code>，链接时写 <code>001/</code> 即可，不用带文件名；</li>
+        <li><strong>NoBuild</strong> —— 没有 Markdown、没有模板引擎、没有 package.json。写 HTML 就是写博客；</li>
+        <li>新文章 = 复制上一个文件夹 → 编号 +1 → 改内容 → 去首页列表加一行链接。完事。</li>
+      </ul>
+
+      <p>目录长这样：</p>
+
+      <pre><code>├── 001/
+│   └── index.html   ← 本文
+├── 002/             ← 下一篇
+│   └── index.html
+├── index.html       ← 首页（文章列表）
+└── style.css        ← 唯一的样式表</code></pre>
+
+      <p>就这些。剩下的交给浏览器。</p>
+    </article>
+
+    <a class="back" href="../">← 回首页</a>
+  </main>
+</body>
+</html>
